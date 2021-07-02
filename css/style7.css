@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-image: linear-gradient(135deg, teal, pink);
+    height: 100vh;
+    overflow: hidden;
+}
+.box{
+    border-radius: 40px;
+    overflow: hidden;
+    width: 450px;
+    height: 700px;
+    border: 5px solid black;
+    border-bottom: 40px solid black;
+    margin: 40px auto;
+    background-image: url('../images/what-is-a-web-developer.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.battery{
+    padding: 10px;
+}
+.fixed-top{
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: orange;
+}
+.btn1{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: yellow;
+    padding: 5px 10px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px 3px rgb(104, 104, 104);
+}
+.btn1:hover{
+    background-color: black;
+    color: yellow;
+    border-radius: 50px;
+    border: 3px solid yellow;
+    box-shadow: 0 0 10px 3px rgb(253, 253, 79);
+    transition: 0.4s linear;
+}
+.fixed-bottom{
+    flex-wrap: wrap;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 450px;
+    background-color: rgba(255, 166, 0, 0.507);
+    margin-top: 0%;
+}
+.div:hover{
+    box-shadow: 0 0 10px 5px yellow ;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s linear;
+}
+
+.kunopka{
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px 3px rgb(104, 104, 104);
+}
+.kunopka:hover{
+    background-color: black;
+    color: yellow;
+    border-radius: 50px;
+    border: 3px solid yellow;
+    box-shadow: 0 0 10px 3px rgb(253, 253, 79);
+    transition: 0.4s linear;
+}
+.sana{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.div{
+    padding: 5px 10px;
+    display: flex;
+}
+.div:hover{
+    border: 2px solid yellow;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+.btn{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    color: black;
+    font-size: 15px;
+}
+.btn2{
+    background-color: yellow;
+    padding: 3px;
+    border-radius: 5px;
+} 
+.menu{
+    font-size: 40px;
+    padding: 0;
+}
+.link{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.nom{
+    padding-top: 50px;
+}
+.rasm1{
+    background-image: url('https://iconarchive.com/download/i24292/martin-berube/animal/snake.ico');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: top, center;
+}
+.rasm{
+    background-image: url('https://onethumbgames.com/wp-content/uploads/2017/04/circle-brick-breaker-ballz.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: top, center;
+}
+.rasm2{
+    background-image: url('../images/700b9f2ef47db9764a9483caba29483e.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: top, center;
+}

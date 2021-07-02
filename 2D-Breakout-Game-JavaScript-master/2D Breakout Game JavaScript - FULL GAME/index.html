@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D Breakout Game - JavScript</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">
+    <link rel="stylesheet" href="/18-dars/css/style8.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        #sound{
+            width: 30px;
+            height : 30px;
+            cursor: pointer;
+            position: absolute;
+            top : 465px;
+            left : 15px;
+        }
+        #gameover{
+            position: absolute;
+            width : 450px;
+            height: 520px;
+            background: rgba(0,0,0,0.5);
+            display: none;
+        }
+        #youwon{
+            width: 100px;
+            position: absolute;
+            top : 200px;
+            left : 150px;
+            display: none;
+        }
+        #youlose{
+            width:450px;
+            position: absolute;
+            top: 100px;
+            left : 0px;
+            display: none;
+        }
+        #restart{
+            position: absolute;
+            top: 310px;
+            left : 155px;
+            cursor: pointer;
+            font-size: 1.25em;
+            color : #FFF;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            background-image: linear-gradient(135deg, teal, pink);
+            height: 100vh;
+            overflow: hidden;
+        }
+        .box{
+            position: relative;
+            border-radius: 40px;
+            overflow: hidden;
+            width: 450px;
+            height: 700px;
+            border: 5px solid black;
+            border-bottom: 40px solid black;
+            margin: 40px auto;
+            background-image: url('../images/what-is-a-web-developer.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .battery{
+            padding: 10px;
+        }
+        .fixed-top{
+            top: 0;
+            position: sticky;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: orange;
+        }
+        .fixed-bottom{
+            flex-wrap: wrap;
+            bottom: 0;
+            position: sticky;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            padding-top: 20px;
+            background-color: orange;
+            margin-top: 100%;
+        }
+        .div:hover{
+            box-shadow: 0 0 10px 5px yellow ;
+            border-radius: 50px;
+            padding: 5px;
+            text-align: center;
+            transition: 0.5s linear;
+        }
+        .menu{
+            font-size: 40px;
+            padding: 0;
+        }
+        .link{
+            text-decoration: none;
+            list-style-type: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .abu{
+            width: 450px;
+            height: 475px;
+        }
+        .btn1{
+            background-color: yellow;
+            padding: 5px 10px;
+            border-radius: 50px;
+            border: 3px solid black;
+            box-shadow: 0 0 10px 3px rgb(104, 104, 104);
+        }
+        .btn1:hover{
+            background-color: black;
+            color: yellow;
+            border-radius: 50px;
+            border: 3px solid yellow;
+            box-shadow: 0 0 10px 3px rgb(253, 253, 79);
+            transition: 0.4s linear;
+        }
+        .kunopka{
+            background-color: yellow;
+            padding: 5px 10px;
+            border-radius: 50px;
+            border: 3px solid black;
+            box-shadow: 0 0 10px 3px rgb(104, 104, 104);
+        }
+        .kunopka:hover{
+            background-color: black;
+            color: yellow;
+            border-radius: 50px;
+            border: 3px solid yellow;
+            box-shadow: 0 0 10px 3px rgb(253, 253, 79);
+            transition: 0.4s linear;
+        }
+        .div:hover{
+            box-shadow: 0 0 10px 5px yellow ;
+            border-radius: 50px;
+            padding: 5px;
+            text-align: center;
+            transition: 0.5s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="fixed-top">
+            <a href="/18-dars/master.html"><button class="btn1"><i class="fas fa-long-arrow-alt-left"></i>Back</button></a>
+            <h3>Flexbox App Latout</h3>
+            <i class="fas fa-battery-half battery">47%</i>
+            <a class="button" href="#"><button class="kunopka"><i class="fas fa-cog"></i></button></a>
+        </div>
+        
+        <div id="gameover">
+            <img src="img/youwon.png" alt="" id="youwon">
+            <img src="img/gameover.png" alt="" id="youlose">
+            <div id="restart">Play Again!</div>
+        </div>
+        <div class="sound">
+            <img src="img/SOUND_ON.png" alt="" id="sound">
+        </div>
+        <canvas class="abu" id="breakout" width="400" height="500"></canvas>
+        <div class="fixed-bottom">
+            <div class="div">
+                <a class="link" href="/18-dars/index7.html">
+                     <i class="fas fa-ellipsis-h menu"></i>
+                     <br>
+                     <i class="fas fa-ellipsis-h menu"></i>
+                     <br>
+                     Menu
+                 </a>
+            </div>
+         </div>
+    </div>
+    <script src="components.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

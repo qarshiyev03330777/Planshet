@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-image: linear-gradient(135deg, teal, pink);
+    height: 100vh;
+    overflow: hidden;
+}
+.clock{
+    margin: 0 auto;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7) url(../images/clock.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: 20px solid #fff;
+    box-shadow: 0 0 10px 3px #fff;
+}
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #848484;
+    border: 2px solid #fff;
+    z-index: 100000;
+    border-radius: 50%;
+}
+.hour, .min, .sec{
+    position: absolute;
+}
+.hour, .hr{
+    width: 100px;
+    height: 150px;
+}
+.min, .mn{
+    width: 190px;
+    height: 170px;
+}
+.sec, .sc{
+    width: 190px;
+    height: 190px;
+}
+.hr, .mn, .sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+.hr::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #848484;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+.mn::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #848484;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+.sc::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #ff6767;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+.boxes{
+    background-image: linear-gradient(135deg, purple, blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.box{
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    width: 450px;
+    height: 700px;
+    border: 10px solid black;
+    border-bottom: 40px solid black;
+    border-radius: 40px;
+    background-image: url('../images/what-is-a-web-developer.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.battery{
+    padding: 10px;
+}
+.fixed-top{
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: orange;
+}
+.center{
+    overflow: hidden;
+}
+.fixed-bottom{
+    margin-top: 24%;
+    flex-wrap: wrap;
+    bottom: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    background-color: orange;
+}
+.div:hover{
+    box-shadow: 0 0 10px 5px yellow ;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s linear;
+}
+
+.kunopka{
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px 3px rgb(104, 104, 104);
+}
+.kunopka:hover{
+    background-color: black;
+    color: yellow;
+    border-radius: 50px;
+    border: 3px solid yellow;
+    box-shadow: 0 0 10px 3px rgb(253, 253, 79);
+    transition: 0.4s linear;
+}
+.sana{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.div{
+    padding: 5px 35px;
+    display: flex;
+    border-radius: 50%;
+}
+.div:hover{
+    border: 2px solid yellow;
+    border-radius: 50%;
+    padding: 5px 35px;
+}
+.btn{
+    color: black;
+    font-size: 15px;
+}
+.btn2{
+    background-color: yellow;
+    padding: 3px;
+    border-radius: 5px;
+} 
+.menu{
+    font-size: 40px;
+    padding: 0;
+}
+.link{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}

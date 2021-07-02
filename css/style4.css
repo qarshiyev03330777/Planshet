@@ -1,0 +1,149 @@
+.game{
+    margin-top: 20px;
+    width: 400px;
+    height: 200px;
+    border: 5px solid black;
+    margin: 20px auto;
+}
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(https://art.pixilart.com/d8a5d6f1f1f432a.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+
+}
+.jump{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0%{
+        top: 150px
+    }
+    30%{
+        top: 130px
+    }
+    50%{
+        top: 80px
+    }
+    80%{
+        top: 130px
+    }
+    100%{
+        top: 150px
+    }
+}
+
+#cactus{
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6uSR94t7MVAKvndBXqcYHXj9sOlA8NgQKA&usqp=CAU);
+    background-size: 20px 40px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+.box3{
+    border-radius: 40px;
+    overflow: hidden;
+    width: 450px;
+    height: 700px;
+    border: 5px solid black;
+    border-bottom: 40px solid black;
+    margin: 40px auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fixed-top{
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: orange;
+}
+.kunopka{
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px 3px rgb(104, 104, 104);
+}
+.kunopka:hover{
+    background-color: black;
+    color: yellow;
+    border-radius: 50px;
+    border: 3px solid yellow;
+    box-shadow: 0 0 10px 3px rgb(253, 253, 79);
+    transition: 0.4s linear;
+}
+.fixed-bottom3{
+    flex-wrap: wrap;
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 425px;
+    background-color: orange;
+}
+.div{
+    padding-left: 18px;
+}
+.div:hover{
+    box-shadow: 0 0 10px 5px yellow ;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s linear;
+    padding: 5px 33px;
+}
+.btn{
+    color: black;
+    font-size: 15px;
+}
+.btn2{
+    background-color: yellow;
+    padding: 3px;
+    border-radius: 5px;
+}   
+.btn1{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: yellow;
+    padding: 5px 10px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px 3px rgb(104, 104, 104);
+}
+.btn1:hover{
+    background-color: black;
+    color: yellow;
+    border-radius: 50px;
+    border: 3px solid yellow;
+    box-shadow: 0 0 10px 3px rgb(253, 253, 79);
+    transition: 0.4s linear;
+}
+.menu{
+    font-size: 40px;
+    padding: 0;
+}
+.link{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
